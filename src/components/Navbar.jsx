@@ -37,16 +37,18 @@ function Navbar() {
         {/* Buttons */}
 
         <div className="flex items-center gap-5">
-<Link to="/login">
-  <button className="font-semibold text-blue-600 hover:text-blue-800">
-    Login
-  </button>
-</Link>
+    
+        <Link to="/login">
+        <button className="font-semibold text-blue-600 hover:text-blue-800">
+            Login
+        </button>
+        </Link>
 
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition">
+        <Link to="/register">
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition">
             Get Started
-          </button>
-
+        </button>
+        </Link>
         </div>
 
       </div>
