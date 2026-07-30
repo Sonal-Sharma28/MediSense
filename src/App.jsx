@@ -1,6 +1,7 @@
 import Features from "./components/Features";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Stats from "./components/Stats";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Stats />
     </div>
   );
 }
