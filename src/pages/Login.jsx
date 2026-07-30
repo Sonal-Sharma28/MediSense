@@ -1,24 +1,31 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Backend authentication will be added later
+    navigate("/dashboard");
+  };
+
   return (
     <div className="min-h-screen bg-[#F8F4E8] flex">
-
-      {/* Left */}
-      <div className="w-1/2 hidden lg:flex flex-col justify-center px-20">
+      
+      {/* Left Side */}
+      <div className="hidden lg:flex w-1/2 flex-col justify-center px-20">
         <h1 className="text-6xl font-extrabold text-gray-900 leading-tight">
           Welcome
           <br />
           Back 👋
         </h1>
 
-        <p className="mt-8 text-xl text-gray-600 leading-8">
+        <p className="mt-8 text-xl text-gray-600 leading-8 max-w-lg">
           Continue your healthcare journey with AI-powered medical report
-          analysis and insights.
+          analysis and personalized health insights.
         </p>
       </div>
 
-      {/* Right */}
+      {/* Right Side */}
       <div className="flex-1 flex items-center justify-center">
 
         <div className="bg-white w-[430px] rounded-3xl shadow-2xl p-10">
@@ -35,7 +42,7 @@ function Login() {
 
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Email Address"
               className="w-full border rounded-xl p-4 outline-none focus:border-blue-600"
             />
 
@@ -45,29 +52,28 @@ function Login() {
               className="w-full border rounded-xl p-4 outline-none focus:border-blue-600"
             />
 
-            <button className="w-full bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition">
+            <button
+              onClick={handleLogin}
+              className="w-full bg-blue-600 text-white py-4 rounded-xl hover:bg-blue-700 transition"
+            >
               Login
             </button>
 
           </div>
 
-          <p className="text-center mt-8">
-
+          <p className="text-center mt-8 text-gray-600">
             Don't have an account?{" "}
-
             <Link
               to="/register"
-              className="text-blue-600 font-semibold"
+              className="text-blue-600 font-semibold hover:underline"
             >
               Register
             </Link>
-
           </p>
 
         </div>
 
       </div>
-
     </div>
   );
 }
