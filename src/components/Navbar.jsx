@@ -1,20 +1,53 @@
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-10 py-5 bg-white shadow-sm">
-      <h1 className="text-3xl font-bold text-blue-600">
-        🩺 MediSense
-      </h1>
+    <nav className="bg-[#F8F4E8]">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-10 py-6">
 
-      <div className="space-x-8 text-gray-700 font-medium">
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        {/* Logo */}
+        <div className="flex items-center gap-3">
+          <div className="w-12 h-12 rounded-2xl bg-blue-600 flex items-center justify-center text-white text-2xl shadow-md">
+            🩺
+          </div>
+
+          <h1 className="text-3xl font-bold text-blue-600">
+            MediSense
+          </h1>
+        </div>
+
+        {/* Links */}
+        <ul className="hidden md:flex items-center gap-10 text-gray-700 font-medium">
+          <li className="cursor-pointer hover:text-blue-600 transition">
+            Home
+          </li>
+
+          <li className="cursor-pointer hover:text-blue-600 transition">
+            Features
+          </li>
+
+          <li className="cursor-pointer hover:text-blue-600 transition">
+            About
+          </li>
+
+          <li className="cursor-pointer hover:text-blue-600 transition">
+            Contact
+          </li>
+        </ul>
+
+        {/* Buttons */}
+
+        <div className="flex items-center gap-5">
+
+          <button className="font-semibold text-blue-600 hover:text-blue-800">
+            Login
+          </button>
+
+          <button className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition">
+            Get Started
+          </button>
+
+        </div>
+
       </div>
-
-      <button className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
-        Login
-      </button>
     </nav>
   );
 }

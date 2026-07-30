@@ -2,40 +2,134 @@ import hero from "../assets/hero.svg";
 
 function Hero() {
   return (
-    <section className="flex items-center justify-between px-16 py-20">
+    <section className="bg-[#F8F4E8]">
 
-      {/* Left */}
-      <div className="max-w-xl">
-        <h1 className="text-5xl font-bold text-gray-900 leading-tight">
-          Understand Your
-          <span className="text-blue-600"> Medical Reports </span>
-          with AI
-        </h1>
+      <div className="max-w-7xl mx-auto px-10 py-24 flex items-center justify-between gap-10">
 
-        <p className="mt-6 text-lg text-gray-600">
-          Upload your medical reports and get AI-powered summaries,
-          abnormal value detection, and easy-to-understand health insights
-          in seconds.
-        </p>
+        {/* LEFT */}
 
-        <div className="mt-8 flex gap-4">
-          <button className="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
-            Upload Report
-          </button>
+        <div className="max-w-xl">
 
-          <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition">
-            Learn More
-          </button>
+          <p className="text-blue-600 font-semibold tracking-widest uppercase">
+            AI Powered Healthcare
+          </p>
+
+          <h1 className="mt-4 text-7xl font-extrabold leading-tight text-gray-900">
+
+            Understand
+
+            <br />
+
+            Your
+
+            <span className="text-blue-600">
+
+              {" "}Medical Reports
+
+            </span>
+
+            <br />
+
+            with AI.
+
+          </h1>
+
+          <p className="mt-8 text-xl text-gray-600 leading-9">
+
+            Upload your reports and receive intelligent summaries,
+            abnormal value detection, medical explanations,
+            health trends and personalized insights within seconds.
+
+          </p>
+
+          <div className="mt-10 flex gap-5">
+
+            <button className="bg-blue-600 text-white px-8 py-4 rounded-xl shadow-lg hover:bg-blue-700 transition">
+
+              Upload Report
+
+            </button>
+
+            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-xl hover:bg-blue-50 transition">
+
+              Learn More
+
+            </button>
+
+          </div>
+
+          <div className="mt-12 flex gap-10">
+
+            <div>
+
+              <h2 className="text-3xl font-bold">
+                10K+
+              </h2>
+
+              <p className="text-gray-600">
+                Reports
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-3xl font-bold">
+                98%
+              </h2>
+
+              <p className="text-gray-600">
+                Accuracy
+              </p>
+
+            </div>
+
+            <div>
+
+              <h2 className="text-3xl font-bold">
+                24/7
+              </h2>
+
+              <p className="text-gray-600">
+                AI Support
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
-      </div>
 
-      {/* Right */}
-      <div>
-        <img
-          src={hero}
-          alt="Medical Illustration"
-          className="w-[500px]"
-        />
+        {/* RIGHT */}
+
+        <div className="relative">
+
+          <div className="absolute -top-6 -left-6 bg-white rounded-2xl shadow-xl p-4">
+
+            🤖 AI Summary
+
+          </div>
+
+          <div className="absolute top-36 -right-8 bg-blue-600 text-white rounded-2xl shadow-xl p-4">
+
+            📊 Abnormal Values
+
+          </div>
+
+          <div className="absolute bottom-5 left-0 bg-white rounded-2xl shadow-xl p-4">
+
+            📈 Health Timeline
+
+          </div>
+
+          <img
+            src={hero}
+            alt="Medical"
+            className="w-[620px]"
+          />
+
+        </div>
+
       </div>
 
     </section>
