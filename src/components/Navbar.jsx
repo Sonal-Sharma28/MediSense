@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="bg-[#F8F4E8]">
@@ -36,10 +37,11 @@ function Navbar() {
         {/* Buttons */}
 
         <div className="flex items-center gap-5">
-
-          <button className="font-semibold text-blue-600 hover:text-blue-800">
-            Login
-          </button>
+<Link to="/login">
+  <button className="font-semibold text-blue-600 hover:text-blue-800">
+    Login
+  </button>
+</Link>
 
           <button className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow-lg hover:bg-blue-700 transition">
             Get Started
